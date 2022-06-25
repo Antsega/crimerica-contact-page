@@ -1,13 +1,14 @@
 {
   "name": "contact-me",
   "version": "1.0.0",
-  "description": "Dan contact me",
-  "main": "app.js",
+  "description": "Crimerica contact page",
+  "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node App.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
-  "author": "",
+  "author": "Eurus",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
