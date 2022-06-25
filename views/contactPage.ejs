@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Crimerica Contact Page</title>
+    <link rel="stylesheet" href="/css/contactUs.css"> <!-- links css-->
+    <link rel="stylesheet" href="/css/background.css"> 
+</head>
+<!-- Title End -->
+
+<body>
+<form target="_blank" action="https://formsubmit.co/zepher75@icloud.com" method="POST"> <!-- Change this to their email -->         
+            <div class="contactUsBox">
+                <div class="contactUsInnerBox">
+                    <div class="title">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="topics">
+                        <div class="name">Name  <input class="nameBar" type="text" name="name" placeholder="John Doe" required></div>
+                        <div class="subject">Email <input class="emailBar" type="email" name="email" placeholder="your@email.com" required> </div>
+                        <div class="message">Message <input class="messageBar" type="message" name="message" placeholder="Good Morning! Reaching out because. . . " required> </div>
+                        <button class="submit" type="submit">Submit</button>
+                        
+                        <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thankYou.html" method="POST">       Thank You Page -->
+                        <input type="hidden" name="_captcha" value="false">     <!-- Disables Captcha -->
+                        <input type="hidden" name="_template" value="table">
+                    </div>
+                </div>
+            </div>
+</form>
+
+</body>
+</html>
+
+
+<!-- Check List
+    1) Change their email on line 14
+!  -->

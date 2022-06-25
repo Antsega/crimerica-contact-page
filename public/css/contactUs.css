@@ -1,0 +1,162 @@
+@import url(/styling/Poppins/);
+
+:root {
+    --overlay-color: #111;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 90vh;
+    overflow-x: hidden;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 200px;
+}
+
+
+.overlay {
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    object-fit: contain;      /* or cover */
+    opacity: .5;
+    overflow: hidden;
+    left:-5% ;
+    background-color: var(--overlay-color);
+    mix-blend-mode: overlay;
+}
+
+.contactUsBox {
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    border-radius: 4px;
+    background: linear-gradient(#000, #000);
+    top: 17.5%;
+    left: 25%;  /* 25% is center */
+}
+
+.contactUsInnerBox {
+    position: relative;
+    height: 95%;
+    width: 95%;
+    border-radius: 4px;
+    background: linear-gradient(#6b76c9, #fff);
+    color: black;
+    left: 2.5%;
+    top: 2.5%;
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.topics {
+    top: -10%;
+    position: relative;
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 2%;
+}
+
+.name {
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+.subject {
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+.message {
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+
+.nameBar {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    border-radius: 4px;
+    padding-left: 1%;
+    margin-left: 6%;
+
+}
+
+.emailBar {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    border-radius: 4px;
+    padding-left: 1%;
+    margin-left: 6%;
+}
+
+.messageBar {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    border-radius: 4px;
+    padding-left: 1%;
+    margin-left: 2.5%;
+}
+.submit {
+    position: relative;
+    height: 10%;
+    width: 80%;
+    left: 10%;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: ease-out 1s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 4px;
+
+}
+
+.submit:hover {
+    color: white;
+    box-shadow: inset 720px 0 0 0 green;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .body{background-color: black;}
+    .messageBar {width: 50%;}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "contact-me",
+  "version": "1.0.0",
+  "description": "Dan contact me",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "node": "^18.4.0",
+    "nodemon": "^2.0.18",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "browser": "^0.2.6",
+    "browser-sync": "^2.27.10"
+  }
+}
