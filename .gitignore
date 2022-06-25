@@ -1,2 +1,10 @@
-.env
-/node_modules
+*-debug.log
+*-error.log
+.nyc_output
+/.nyc_output
+/dist
+/lib
+/package-lock.json
+/tmp
+coverage
+node_modules
