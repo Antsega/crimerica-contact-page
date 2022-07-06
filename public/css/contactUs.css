@@ -1,8 +1,5 @@
 @import url(/styling/Poppins/);
 
-:root {
-    --overlay-color: #111;
-}
 * {
     margin: 0px;
     padding: 0px;
@@ -19,28 +16,10 @@ body {
     background-image: url("background.jpg");
     background-repeat: repeat-y;
     background-size: cover;
-}
-
-.header1{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 200px;
+    position: relative;
 }
 
 
-.overlay {
-    position: absolute;
-    width: 105%;
-    height: 100%;
-    object-fit: contain;      /* or cover */
-    opacity: .5;
-    overflow: hidden;
-    left:-5% ;
-    background-color: var(--overlay-color);
-    mix-blend-mode: overlay;
-}
 
 .contactUsBox {
     position: absolute;
@@ -49,7 +28,7 @@ body {
     border-radius: 4px;
     background: linear-gradient(#000, #000);
     top: 17.5%;
-    left: 25%;  /* 25% is center */
+    left: 25%;
 }
 
 .contactUsInnerBox {
@@ -61,6 +40,7 @@ body {
     color: black;
     left: 2.5%;
     top: 2.5%;
+    
 }
 
 .title {
@@ -156,7 +136,37 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
-    .body{background-color: black;}
-    .messageBar {width: 50%;}
+/* media mess start */
+
+
+@media screen and (max-width: 1200px){
+    .contactUsBox{
+    left: 20%;
+    width: 60%;
+    }
 }
+@media screen and (max-width: 1024px){
+    .contactUsBox{
+    left: 15%;
+    width: 70%;
+    }
+}
+@media screen and (max-width: 768px){
+    .contactUsBox{
+    left: 10%;
+    width: 80%;
+    }
+}
+@media screen and (max-width: 480px){
+    .contactUsBox{
+    left: 2.5%;
+    width: 95%;
+    }
+}
+
+/* :root {
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+} */
