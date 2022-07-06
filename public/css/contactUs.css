@@ -10,13 +10,15 @@
 }
 
 body {
+    position: relative;
     width: 100%;
     height: 90vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-image: url("background.jpg");
-    background-repeat: repeat-y;
-    background-size: cover;
-    position: relative;
+    background-repeat: none;
+    background-size: 100% 111.1%;
+
 }
 
 
@@ -141,14 +143,20 @@ body {
 
 @media screen and (max-width: 1200px){
     .contactUsBox{
-    left: 20%;
-    width: 60%;
+    left: 10%;
+    width: 80%;
+    }
+    .topics{
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 1024px){
     .contactUsBox{
-    left: 15%;
-    width: 70%;
+    left: 10%;
+    width: 80%;
+    }
+    .topics{
+        font-size: 12.5px;
     }
 }
 @media screen and (max-width: 768px){
@@ -156,11 +164,17 @@ body {
     left: 10%;
     width: 80%;
     }
+    .topics{
+        font-size: 10px;
+    }
 }
 @media screen and (max-width: 480px){
     .contactUsBox{
     left: 2.5%;
     width: 95%;
+    }
+    .topics{
+        font-size: 10px;
     }
 }
 
